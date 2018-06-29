@@ -3,17 +3,17 @@ notes for computer organization and design
 
 ## 5.7 Virtual memory
 
-**two motivations for virtual memory:**
-	1.to allow efficient and safe sharing of memory among multiple programs
-	2.to remove the programming burdens of a small, limited amount of main memory
+**two motivations for virtual memory:**  
+	1.to allow efficient and safe sharing of memory among multiple programs  
+	2.to remove the programming burdens of a small, limited amount of main memory  
 	
-In virtual memory, the address is broken into a virtual page number and a page offset. The physical page number constitutes the upper portion of the physical address, while the page off set, which is not changed, constitutes the lower portion.
+In virtual memory, the address is broken into a virtual page number and a page offset. The physical page number constitutes the upper portion of the physical address, while the page off set, which is not changed, constitutes the lower portion.  
 
-**with the enormous miss penalty, key decisions in designing virtual memory systems:**
-	1.pages should be large enough to try to amortize the high access time.
-	2.organizations that reduce the page fault rate are attractive.
-	3.page faults can be handle in software.
-	4.write-through will not work, use write-back.
+**with the enormous miss penalty, key decisions in designing virtual memory systems:**  
+	1.pages should be large enough to try to amortize the high access time.  
+	2.organizations that reduce the page fault rate are attractive.  
+	3.page faults can be handle in software.  
+	4.write-through will not work, use write-back.  
 
 **hardware/software interface**
   the process's address place, resides in memory, define by its page table.
