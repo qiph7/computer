@@ -15,20 +15,20 @@ In virtual memory, the address is broken into a virtual page number and a page o
 	3.page faults can be handle in software.  
 	4.write-through will not work, use write-back.  
 
-**hardware/software interface**
-  the process's address place, resides in memory, define by its page table.
-  the operating system simply loads the page table register to point to the page table of the process it wants to make active.
-  Each process has its own page table,since diff erent processes use the same virtual addresses.
-  Th e operating system is responsible for allocating the physical memory and updating the page tables.
+**hardware/software interface**  
+  the process's address place, resides in memory, define by its page table.  
+  the operating system simply loads the page table register to point to the page table of the process it wants to make active.  
+  Each process has its own page table,since diff erent processes use the same virtual addresses.  
+  Th e operating system is responsible for allocating the physical memory and updating the page tables.  
   
-**page fault**
-  the operating system usually creates the space on fl ash memory or disk for all the pages of a process when it creates the process, called the swap space.
-  At that time, it also creates a data structure to record where each virtual page is stored on disk. 
-  This data structure may be part of the page table or may be an auxiliary data structure indexed in the same way as the page table.
+**page fault**  
+  the operating system usually creates the space on fl ash memory or disk for all the pages of a process when it creates the process, called the swap space.  
+  At that time, it also creates a data structure to record where each virtual page is stored on disk.   
+  This data structure may be part of the page table or may be an auxiliary data structure indexed in the same way as the page table.  
   
-**reducing the storage of page tables:**
-  1.keep a limit register
-  2.segments for stack and heap
-  3.hashing function
-  4.multiple levels of page tables
-  5.page tables to be paged
+**reducing the storage of page tables:**  
+  1.keep a limit register  
+  2.segments for stack and heap  
+  3.hashing function  
+  4.multiple levels of page tables  
+  5.page tables to be paged  
